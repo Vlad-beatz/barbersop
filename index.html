@@ -23,7 +23,7 @@
               <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="user-navigation">
-              <li class="login-link">
+              <li>
                 <a class="login-link" href="login.html">Вход</a>
               </li>
             </ul>
@@ -71,11 +71,13 @@
 
         <section class="gallery">
           <h2>Фотогалерея</h2>
-          <figure class="gallery-content">
-            <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Фото интерьера"></a>
-          </figure>
-          <button class="button gallery-button gallery-button-back" type="button">Назад</button>
-          <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
+          <div class="gallery-container">
+            <figure class="gallery-content">
+              <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Фото интерьера"></a>
+            </figure>
+            <button class="button gallery-button gallery-button-back" type="button">Назад</button>
+            <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
+          </div>
         </section>
       </div>
 
@@ -133,9 +135,22 @@
         <div class="footer-social">
           <b>Давайте дружить!</b>
           <ul>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <img src="img/vk.svg" width="27" height="15" alt="Логотип Вконтакте">              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <img src="img/facebook.svg" width="19" height="22" alt="Логотип Фейсбук">              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <img src="img/instagram.svg" width="20" height="20" alt="Логотип Инстаграм">
+              </a>
+            </li>
           </ul>
         </div>
         <p class="footer-copyright">
